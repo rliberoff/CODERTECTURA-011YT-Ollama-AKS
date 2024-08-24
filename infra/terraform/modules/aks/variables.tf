@@ -29,7 +29,7 @@ variable "dns_prefix" {
 }
 
 variable "sku" {
-  description = "(Optional) The SKU Tier that should be used for this Azure Kubernetes Service (AKS) Cluster. Possible values are `Free`, `Standard`, `Premium` (which includes the Uptime SLA). Defaults to `Standard`."
+  description = "(Required) The SKU Tier that should be used for this Azure Kubernetes Service (AKS) Cluster. Possible values are `Free`, `Standard`, `Premium` (which includes the Uptime SLA). Defaults to `Standard`."
   type        = string
   nullable    = false
   default     = "Standard"
